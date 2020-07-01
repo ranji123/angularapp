@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <label>Product Name</label>
+      </div>
+      <div class="col-md-10">
+        <input type="text" class="form-control" [(ngModel)]="product.productName" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <label>Price</label>
+      </div>
+      <div class="col-md-10">
+        <input type="text" class="form-control" [(ngModel)]="product.price" />
+      </div>
+    </div>
+    <br>
+    <div class="text-right">
+      <button class="btn btn-secondary" (click)="goToList()">Go To Product List</button>
+      <button class="btn btn-primary" (click)="addProduct()">Add Product</button>
+    </div>
+  </div>
